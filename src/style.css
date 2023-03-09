@@ -1,0 +1,11 @@
+@font-face {
+  font-family: Weddingday;
+  src: url(./Weddingday.ttf);
+  font-weight: 600;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
