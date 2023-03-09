@@ -43,3 +43,7 @@ body {
 .main {
   flex: 1;
 }
+
+.footer {
+  font-size: 0.8rem;
+}
