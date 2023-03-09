@@ -1,12 +1,12 @@
 @font-face {
   font-family: Weddingday;
-  src: url(./Weddingday.ttf) format(truetype);
+  src: url(./fonts/Weddingday.ttf) format(truetype);
   font-weight: 600;
 }
 
 @font-face {
   font-family: Neogloss;
-  src: url(./Neogloss.ttf) format(truetype);
+  src: url(./fonts/Neogloss.ttf) format(truetype);
 }
 
 * {
@@ -19,7 +19,7 @@
   --black: #050505;
   --white: #fffdd0;
   font-family: Helvetica, sans-serif;
-  background-image: url(./background.jpg);
+  background-image: url(./images/background.jpg);
   background-size: cover;
   background-position-y: 60%;
 }
