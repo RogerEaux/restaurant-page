@@ -31,7 +31,7 @@ body {
 }
 
 .header,
-.main div,
+.main > div,
 .footer {
   display: flex;
   justify-content: center;
@@ -53,8 +53,8 @@ body {
   justify-content: center;
 }
 
-.main div {
-  width: 250px;
+.main > div {
+  width: 220px;
   flex-direction: column;
   align-self: center;
   align-items: center;
@@ -68,9 +68,47 @@ body {
   font-size: 0.8rem;
 }
 
+.logo {
+  position: relative;
+  height: 100px;
+  width: 100px;
+}
+
+.logo img:first-child {
+  position: absolute;
+  height: 100px;
+  width: auto;
+  z-index: 1;
+}
+
+.logo img:last-child {
+  position: absolute;
+  height: 60px;
+  width: 60px;
+  right: 20px;
+  top: 20px;
+  z-index: 2;
+}
+
 @media (min-width: 600px) {
-  .main div {
+  .main > div {
     width: 300px;
     font-size: 2rem;
+  }
+
+  .logo img:first-child,
+  .logo {
+    height: 150px;
+  }
+
+  .logo {
+    width: 150px;
+  }
+
+  .logo img:last-child {
+    height: 90px;
+    width: 90px;
+    right: 30px;
+    top: 30px;
   }
 }
