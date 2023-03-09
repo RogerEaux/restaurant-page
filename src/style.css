@@ -9,3 +9,23 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+:root {
+  --black: #050505;
+  --white: #fffdd0;
+  background-image: url(./background.jpg);
+  background-size: cover;
+  background-position: 50% 42%;
+}
+
+.header {
+  font-family: Weddingday;
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--black);
+  color: var(--white);
+  opacity: 0.9;
+  padding: 24px;
+}
