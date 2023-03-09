@@ -1,7 +1,12 @@
 @font-face {
   font-family: Weddingday;
-  src: url(./Weddingday.ttf);
+  src: url(./Weddingday.ttf) format(truetype);
   font-weight: 600;
+}
+
+@font-face {
+  font-family: Neogloss;
+  src: url(./Neogloss.ttf) format(truetype);
 }
 
 * {
@@ -26,24 +31,46 @@ body {
 }
 
 .header,
+.main div,
 .footer {
   display: flex;
   justify-content: center;
   background-color: var(--black);
   color: var(--white);
   opacity: 0.85;
-  padding: 24px;
+  padding: 16px;
+  box-shadow: 0 0 2px var(--white);
 }
 
 .header {
-  font-family: Weddingday;
+  font-family: Weddingday, Helvetica, sans-serif;
   font-size: 2rem;
 }
 
 .main {
   flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.main div {
+  width: 250px;
+  flex-direction: column;
+  align-self: center;
+  align-items: center;
+  font-family: Neogloss, Helvetica, sans-serif;
+  font-size: 1.6rem;
+  gap: 8px;
+  border-radius: 4px;
 }
 
 .footer {
   font-size: 0.8rem;
+}
+
+@media (min-width: 600px) {
+  .main div {
+    width: 300px;
+    font-size: 2rem;
+  }
 }
