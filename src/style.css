@@ -32,6 +32,7 @@ body {
   flex-direction: column;
 }
 
+.nav,
 .header,
 .main > div,
 .footer {
@@ -47,6 +48,17 @@ body {
 .header {
   font-family: Weddingday, Helvetica, sans-serif;
   font-size: 2rem;
+}
+
+.nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 16px;
+}
+
+nav > * {
+  justify-self: center;
+  cursor: pointer;
 }
 
 .main {
@@ -68,6 +80,7 @@ body {
 
 .footer {
   font-size: 0.8rem;
+  margin-top: 16px;
 }
 
 .logo {
@@ -93,6 +106,10 @@ body {
 }
 
 @media (min-width: 600px) {
+  .header {
+    font-size: 2.4rem;
+  }
+
   .main > div {
     width: 300px;
     font-size: 2rem;
