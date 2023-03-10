@@ -27,7 +27,6 @@ const createHome = () => {
   home.appendChild(p1);
   home.appendChild(createLogo());
   home.appendChild(p2);
-  home.classList.add('home');
 
   return home;
 };
