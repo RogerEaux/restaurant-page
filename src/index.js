@@ -1,5 +1,23 @@
 import './style.css';
 import createElements from './initial-load';
+import createHome from './home';
+
+const changeContent = (tab) => {
+  const main = document.querySelector('.main');
+  const currentContent = document.querySelector('.main > div');
+  let newContent = document.createElement('div');
+
+  currentContent.remove();
+  if (tab.getAttribute('data-index') === '0') {
+    newContent = createHome();
+  } else if (tab.getAttribute('data-index') === '1') {
+    newContent = createHome();
+  } else {
+    newContent = createHome();
+  }
+
+  main.appendChild(newContent);
+};
 
 const changeSelected = () => {
   const nav = document.querySelectorAll('nav > div');
@@ -10,6 +28,7 @@ const changeSelected = () => {
         navtab.classList.remove('selected');
       });
       tab.classList.add('selected');
+      changeContent(tab);
     });
   });
 };
