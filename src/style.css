@@ -17,6 +17,7 @@
 
 :root {
   --black: #050505;
+  --gray: #353535;
   --white: #fffdd0;
   --small-logo: 150px;
   --big-logo: 200px;
@@ -51,14 +52,29 @@ body {
 }
 
 .nav {
+  height: calc(1rem + 16px);
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  padding: 0;
   margin-bottom: 16px;
 }
 
-nav > * {
-  justify-self: center;
+nav > div {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
+}
+
+nav > div:hover {
+  background-color: var(--gray);
+}
+
+nav > div:active {
+  background-color: var(--white);
+  color: var(--black);
 }
 
 .main {
