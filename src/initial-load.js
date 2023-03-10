@@ -18,8 +18,12 @@ const createNav = () => {
   const contact = document.createElement('div');
 
   home.textContent = 'Home';
+  home.setAttribute('data-index', '0');
+  home.classList.add('selected');
   menu.textContent = 'Menu';
+  menu.setAttribute('data-index', '1');
   contact.textContent = 'Contact';
+  contact.setAttribute('data-index', '2');
   nav.classList.add('nav');
   nav.appendChild(home);
   nav.appendChild(menu);
