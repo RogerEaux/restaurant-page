@@ -85,7 +85,7 @@ nav > .selected {
 }
 
 .main > div {
-  width: 220px;
+  width: 60%;
   flex-direction: column;
   align-self: center;
   align-items: center;
@@ -93,11 +93,6 @@ nav > .selected {
   font-size: 1.6rem;
   gap: 8px;
   border-radius: 4px;
-}
-
-.footer {
-  font-size: 0.8rem;
-  margin-top: 16px;
 }
 
 .logo {
@@ -122,13 +117,24 @@ nav > .selected {
   z-index: 2;
 }
 
+.main .menu {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+}
+
+.footer {
+  font-size: 0.8rem;
+  margin-top: 16px;
+}
+
 @media (min-width: 600px) {
   .header {
     font-size: 2.4rem;
   }
 
   .main > div {
-    width: 300px;
+    width: max(25%, 300px);
     font-size: 2rem;
   }
 
@@ -146,5 +152,10 @@ nav > .selected {
     width: calc(var(--big-logo) / 3 * 2);
     right: calc(var(--big-logo) / 6);
     top: calc(var(--big-logo) / 6);
+  }
+
+  .main .menu {
+    width: max(60%, 500px);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
 }
