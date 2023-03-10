@@ -70,7 +70,6 @@ nav > div {
 
 nav > div:hover:not(.selected) {
   background-color: var(--gray);
-  color: var(--white);
 }
 
 nav > .selected {
@@ -134,6 +133,10 @@ nav > .selected {
   border-radius: 4px;
   padding: 8px 0;
   cursor: pointer;
+}
+
+.item:hover {
+  background-color: var(--gray);
 }
 
 .item img {
