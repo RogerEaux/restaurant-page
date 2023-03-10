@@ -1,6 +1,7 @@
 import './style.css';
 import createElements from './initial-load';
 import createHome from './home';
+import createMenu from './menu';
 
 const changeContent = (tab) => {
   const main = document.querySelector('.main');
@@ -11,7 +12,7 @@ const changeContent = (tab) => {
   if (tab.getAttribute('data-index') === '0') {
     newContent = createHome();
   } else if (tab.getAttribute('data-index') === '1') {
-    newContent = createHome();
+    newContent = createMenu();
   } else {
     newContent = createHome();
   }
