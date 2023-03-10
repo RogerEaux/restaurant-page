@@ -12,6 +12,23 @@ const createHeader = () => {
   return header;
 };
 
+const createNav = () => {
+  const nav = document.createElement('nav');
+  const home = document.createElement('div');
+  const menu = document.createElement('div');
+  const contact = document.createElement('div');
+
+  home.textContent = 'Home';
+  menu.textContent = 'Menu';
+  contact.textContent = 'Contact';
+  nav.classList.add('nav');
+  nav.appendChild(home);
+  nav.appendChild(menu);
+  nav.appendChild(contact);
+
+  return nav;
+};
+
 const createLogo = () => {
   const logo = document.createElement('div');
   const flag = document.createElement('img');
@@ -67,6 +84,7 @@ const createElements = () => {
   const body = document.querySelector('body');
 
   body.appendChild(createHeader());
+  body.appendChild(createNav());
   body.appendChild(createMain());
   body.appendChild(createFooter());
 };
