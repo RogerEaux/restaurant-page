@@ -68,11 +68,12 @@ nav > div {
   cursor: pointer;
 }
 
-nav > div:hover {
+nav > div:hover:not(.selected) {
   background-color: var(--gray);
+  color: var(--white);
 }
 
-nav > div:active {
+nav > .selected {
   background-color: var(--white);
   color: var(--black);
 }
