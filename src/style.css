@@ -94,6 +94,10 @@ nav > .selected {
   border-radius: 4px;
 }
 
+.main .home {
+  font-weight: 700;
+}
+
 .logo {
   position: relative;
   height: var(--small-logo);
@@ -145,9 +149,29 @@ nav > .selected {
   box-shadow: 0 0 2px var(--white);
 }
 
+.main .contact {
+  width: max(250px, 70%);
+  align-items: center;
+}
+
 .contact img {
   height: 25px;
   width: auto;
+}
+
+.contact > img {
+  height: 210px;
+  width: auto;
+  cursor: pointer;
+}
+
+.contact div:last-child {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
 }
 
 .footer {
@@ -193,5 +217,14 @@ nav > .selected {
   .item img {
     height: 190px;
     width: 190px;
+  }
+
+  .main .contact {
+    width: max(60%, 480px);
+  }
+
+  .contact > img {
+    height: 400px;
+    width: auto;
   }
 }

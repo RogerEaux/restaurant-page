@@ -22,6 +22,7 @@ const createHome = () => {
   const p1 = document.createElement('p');
   const p2 = document.createElement('p');
 
+  home.classList.add('home');
   p1.textContent = 'Cucinato con il cuore';
   p2.textContent = 'Autentica pizza italiana';
   home.appendChild(p1);
