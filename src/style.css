@@ -219,7 +219,7 @@ nav > .selected {
   }
 
   .main .contact {
-    width: max(60%, 480px);
+    width: max(45%, 480px);
   }
 
   .contact > img {
