@@ -2,6 +2,7 @@ import './style.css';
 import createElements from './initial-load';
 import createHome from './home';
 import createMenu from './menu';
+import createContact from './contact';
 
 const changeContent = (tab) => {
   const main = document.querySelector('.main');
@@ -14,7 +15,7 @@ const changeContent = (tab) => {
   } else if (tab.getAttribute('data-index') === '1') {
     newContent = createMenu();
   } else {
-    newContent = createHome();
+    newContent = createContact();
   }
 
   main.appendChild(newContent);
