@@ -5,8 +5,8 @@
 }
 
 @font-face {
-  font-family: Neogloss;
-  src: url(./fonts/Neogloss.ttf) format(truetype);
+  font-family: Montserrat;
+  src: url(./fonts/Montserrat.ttf) format(truetype);
 }
 
 * {
@@ -84,12 +84,12 @@ nav > .selected {
 }
 
 .main > div {
-  width: 60%;
+  width: max(220px, 60%);
   flex-direction: column;
   align-self: center;
   align-items: center;
-  font-family: Neogloss, Helvetica, sans-serif;
-  font-size: 1.6rem;
+  font-family: Montserrat, Helvetica, sans-serif;
+  font-size: 0.8rem;
   gap: 8px;
   border-radius: 4px;
 }
@@ -145,6 +145,11 @@ nav > .selected {
   box-shadow: 0 0 2px var(--white);
 }
 
+.contact img {
+  height: 25px;
+  width: auto;
+}
+
 .footer {
   font-size: 0.8rem;
   margin-top: 16px;
@@ -157,7 +162,7 @@ nav > .selected {
 
   .main > div {
     width: max(25%, 300px);
-    font-size: 2rem;
+    font-size: 1.2rem;
   }
 
   .logo img:first-child,
