@@ -152,6 +152,7 @@ nav > .selected {
 .main .contact {
   width: max(250px, 70%);
   align-items: center;
+  text-align: center;
 }
 
 .contact img {
