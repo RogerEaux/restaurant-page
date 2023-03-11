@@ -56,7 +56,6 @@ body {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 32px;
   padding: 0;
-  margin-bottom: 16px;
 }
 
 nav > div {
@@ -81,6 +80,7 @@ nav > .selected {
   flex: 1;
   display: flex;
   justify-content: center;
+  margin: 64px 0;
 }
 
 .main > div {
@@ -176,7 +176,6 @@ nav > .selected {
 
 .footer {
   font-size: 0.8rem;
-  margin-top: 16px;
 }
 
 @media (min-width: 600px) {
