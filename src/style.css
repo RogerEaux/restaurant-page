@@ -219,11 +219,12 @@ nav > .selected {
   }
 
   .main .contact {
-    width: max(45%, 480px);
+    width: 580px;
   }
 
   .contact > img {
-    height: 400px;
+    height: 420px;
     width: auto;
+    margin: 8px 0;
   }
 }
